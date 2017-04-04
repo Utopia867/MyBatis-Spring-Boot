@@ -48,7 +48,7 @@ public class CountryController {
     @Autowired
     private CountryService countryService;
 
-    @RequestMapping
+    @RequestMapping("/")
     public ModelAndView getAll(Country country) {
         ModelAndView result = new ModelAndView("index");
         List<Country> countryList = countryService.getAll(country);
